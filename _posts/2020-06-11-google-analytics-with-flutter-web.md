@@ -3,11 +3,14 @@ title:  "Google Analytics with Flutter Web"
 date:   2020-06-11 16:26:00 +0530
 categories: [Tech]
 tags: [Open-Source, Flutter, Google-Analytics]
+image: "/assets/posts/google-analytics-with-flutter-web/flutter+google-analytics.png"
 ---
 
 Want to add Google Analytics to your flutter web application? Then, this blog is for you.
 
 I didn't find any direct methods to add google-analytics to my flutter-web application while I was searching. I've managed to integrate it successfully by referring to different blogs. So, I am writing this blog to make it easier.
+
+<img style="width: 100%" src="{{site.baseurl}}//assets/posts/google-analytics-with-flutter-web/flutter+google-analytics.png">
 
 ## Steps to be followed
 
@@ -112,4 +115,4 @@ The above code is an example for Home page. If you want to track other pages, ha
 If you want to look into an example of how I integrated Google-Analytics into my Flutter Web Application. [Here][commit] is the commit of the google-analytics integration.
 
 [analytics]: https://analytics.google.com
-[commit]: https://github.com/immadisairaj/Portfolio/commit/51f4e0b918a6965083e6ad687e46d27bf2326336
+[commit]: https://github.com/immadisairaj/CarouselPortfolio/commit/51f4e0b918a6965083e6ad687e46d27bf2326336

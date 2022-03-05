@@ -5,8 +5,8 @@
     <description>Open-Source Enthusiast | Musician</description>
     <link>https://immadisairaj.github.io/blog/</link>
     <atom:link href="https://immadisairaj.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 17 Dec 2021 10:54:17 +0530</pubDate>
-    <lastBuildDate>Fri, 17 Dec 2021 10:54:17 +0530</lastBuildDate>
+    <pubDate>Sat, 05 Mar 2022 16:02:19 +0530</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2022 16:02:19 +0530</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -857,6 +857,8 @@ Happy Caching!!&lt;/p&gt;
 
 &lt;p&gt;I didn’t find any direct methods to add google-analytics to my flutter-web application while I was searching. I’ve managed to integrate it successfully by referring to different blogs. So, I am writing this blog to make it easier.&lt;/p&gt;
 
+&lt;p&gt;&lt;img style=&quot;width: 100%&quot; src=&quot;/blog//assets/posts/google-analytics-with-flutter-web/flutter+google-analytics.png&quot; /&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;steps-to-be-followed&quot;&gt;Steps to be followed&lt;/h2&gt;
 
 &lt;h3 id=&quot;create-google-analytics&quot;&gt;Create Google Analytics&lt;/h3&gt;
@@ -952,7 +954,7 @@ Happy Caching!!&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; You need to look that all the pages tracked, but this tracking will not contain &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; in them. For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/#/&amp;lt;route&amp;gt;&lt;/code&gt; will be tracked as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&amp;lt;route&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;If you want to look into an example of how I integrated Google-Analytics into my Flutter Web Application. &lt;a href=&quot;https://github.com/immadisairaj/Portfolio/commit/51f4e0b918a6965083e6ad687e46d27bf2326336&quot;&gt;Here&lt;/a&gt; is the commit of the google-analytics integration.&lt;/p&gt;
+&lt;p&gt;If you want to look into an example of how I integrated Google-Analytics into my Flutter Web Application. &lt;a href=&quot;https://github.com/immadisairaj/CarouselPortfolio/commit/51f4e0b918a6965083e6ad687e46d27bf2326336&quot;&gt;Here&lt;/a&gt; is the commit of the google-analytics integration.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 11 Jun 2020 16:26:00 +0530</pubDate>
