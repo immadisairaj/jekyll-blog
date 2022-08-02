@@ -5,9 +5,138 @@
     <description>Open-Source Enthusiast | Musician</description>
     <link>https://immadisairaj.github.io/blog/</link>
     <atom:link href="https://immadisairaj.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 05 Mar 2022 16:02:19 +0530</pubDate>
-    <lastBuildDate>Sat, 05 Mar 2022 16:02:19 +0530</lastBuildDate>
-    <generator>Jekyll v3.9.0</generator>
+    <pubDate>Tue, 02 Aug 2022 19:58:59 +0530</pubDate>
+    <lastBuildDate>Tue, 02 Aug 2022 19:58:59 +0530</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
+    
+      <item>
+        <title>GitHub Actions to deploy Flutter Web to gh-pages</title>
+        <description>&lt;p&gt;Do you deploy your Flutter web application in gh-pages? And you are tired of manually deploying the app every time? Or do you want to deploy your Flutter web application to gh-pages? Then this blog is for you. Continue ahead to know how to simplify the process.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+ &lt;img height=&quot;400&quot; src=&quot;/blog//assets/posts/github-actions-for-flutter-web/thumbnail.jpeg&quot; /&gt;
+ &lt;br /&gt;
+ &lt;em&gt;Thumbnail Design&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-github-actions&quot;&gt;What are GitHub Actions?&lt;/h2&gt;
+
+&lt;p&gt;In a simplified manner, Actions are scripts automated to do something after they are on GitHub.&lt;/p&gt;
+
+&lt;p&gt;Officially from what GitHub says, GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want. You can read more about it &lt;a href=&quot;https://github.com/features/actions&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-github-pages&quot;&gt;What are GitHub Pages?&lt;/h2&gt;
+
+&lt;p&gt;In simple terms, they are static web pages hosted on GitHub via repositories. They are static, which means we won’t be able to get any data that is dynamic. You can read more about it &lt;a href=&quot;https://pages.github.com&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are the one that wants to host static web pages, you can continue. Else, I don’t want to waste your time.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-we-going-to-do&quot;&gt;What are we going to do?&lt;/h2&gt;
+
+&lt;p&gt;Okay, I will get to the point. If you are a Flutter developer, have a static web page built, and want to deploy it. That is where I come in to help you. I make things simpler by deploying your web app to gh-pages with ease.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let’s first look at how the following goes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Getting Your Personal Access Token from GitHub&lt;/li&gt;
+  &lt;li&gt;Adding the Token to GitHub Actions secrets&lt;/li&gt;
+  &lt;li&gt;Writing GitHub Actions workflow to deploy&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;getting-your-personal-access-token-from-github&quot;&gt;Getting Your Personal Access Token from GitHub&lt;/h3&gt;
+
+&lt;p&gt;Why is this necessary? It is because we build the web app behind the hood and then push the commit to deploy into gh-pages with your GitHub credentials.&lt;/p&gt;
+
+&lt;p&gt;If you worry that this method might compromise your security, Don’t worry, this method won’t harm you an inch because we won’t be giving full access to it.&lt;/p&gt;
+
+&lt;p&gt;To start, first click &lt;a href=&quot;https://github.com/settings/tokens/new&quot;&gt;this&lt;/a&gt; link to generate a new GitHub Personal Access Token.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+ &lt;img height=&quot;400&quot; src=&quot;/blog//assets/posts/github-actions-for-flutter-web/pat-setting.png&quot; /&gt;
+ &lt;br /&gt;
+ &lt;em&gt;options to give while creating a Personal Access Token&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You can set the checkboxes as per the above image. The name can be your custom name, and the duration limit you give is up to your use case.&lt;/p&gt;
+
+&lt;p&gt;Once done here, scroll down and click on “Generate Token”.&lt;/p&gt;
+
+&lt;p&gt;After the token is generated, NOTE it down somewhere to be used in the next phase. Let’s call this token &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR GENERATED PA TOKEN&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-the-token-to-github-actions-secrets&quot;&gt;Adding the Token to GitHub Actions secrets&lt;/h3&gt;
+
+&lt;p&gt;Assuming that you already have the code for the web application in the GitHub repository, I will continue with this phase. If you don’t have a GitHub repository, you continue once you have one.&lt;/p&gt;
+
+&lt;p&gt;You can visit the settings of the project repository to add the token you received before into secrets. You can use the following link.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;https://github.com/&amp;lt;username&amp;gt;/&amp;lt;repository&amp;gt;/settings/secrets/actions/new
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;*Make sure to replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;&lt;/code&gt; with your GitHub username and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;repository&amp;gt;&lt;/code&gt; with the repository.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;
+ &lt;img height=&quot;300&quot; src=&quot;/blog//assets/posts/github-actions-for-flutter-web/action-secrets.png&quot; /&gt;
+ &lt;br /&gt;
+ &lt;em&gt;add the Personal Access Token into GitHub Actions secrets&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Once you see the screen (from the image), you can add your Personal Access Token generated from the previous phase &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;YOUR GENERATED PA TOKEN&amp;gt;&lt;/code&gt; with the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACCESS_TOKEN&lt;/code&gt; as in the image.&lt;/p&gt;
+
+&lt;p&gt;Now that we have added the token into GitHub Action secrets, it is safe, and you can delete/remove the previously noted so that it is not known to anyone. And now, we can move on to the next phase.&lt;/p&gt;
+
+&lt;h3 id=&quot;writing-github-actions-workflow-to-deploy&quot;&gt;Writing GitHub Actions workflow to deploy&lt;/h3&gt;
+
+&lt;p&gt;Assuming you have a basic understanding of how to set up a new branch to deploy a web app into GitHub Pages. Else, you can read it &lt;a href=&quot;https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you don’t have a separate branch used for deploying, please do create a new branch (preferred &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Once you have a specific branch name (say &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt;) that uses to deploy into GitHub Pages, you can create a file name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;web-deploy.yml&lt;/code&gt; under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.github/workflows&lt;/code&gt; in the root folder of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; (or your preference) branch.&lt;/p&gt;
+
+&lt;p&gt;You can now copy the below directly into the file specified above while making a few changes.&lt;/p&gt;
+
+&lt;p&gt;You can look at comments starting with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#!&lt;/code&gt; in the following to make changes accordingly.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/immadisairaj/69a2942b68ef19f078c3e864ee3c41fe.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Once done adding it, commit it to the main branch. From this point on, you don’t need to manually push the build to the deployment after having new changes.&lt;/p&gt;
+
+&lt;h3 id=&quot;bonus&quot;&gt;Bonus&lt;/h3&gt;
+
+&lt;p&gt;You can continue with the bonus if you want to understand what the above action or script is doing. Else you can skip this.&lt;/p&gt;
+
+&lt;p&gt;Once you push the commit into GitHub Repository (say &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main&lt;/code&gt; branch), the GitHub Action is triggered (following steps).&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Installs flutter in the ubuntu-latest system.&lt;/li&gt;
+  &lt;li&gt;Builds flutter web into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/build/web&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Pull the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch from the repository into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/build/web-deploy&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Copy the build from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/build/web&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/build/web-deploy&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Commit the change with the commit message that triggered this action.&lt;/li&gt;
+  &lt;li&gt;Push the new commit to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gh-pages&lt;/code&gt; branch into the repository (for which the personal access token is useful). This push, in turn, starts another GitHub Action to deploy the site.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;After this long 3 step process, you have now automated the process to deploy your Flutter web into GitHub Pages. Once you push a new commit, this GitHub Action starts and a new commit for you to deploy GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;Now, use the time I saved into something helpful and Happy Fluttering!&lt;/p&gt;
+
+&lt;p&gt;If this has been useful, please consider sponsoring me via&lt;/p&gt;
+&lt;iframe src=&quot;https://github.com/sponsors/immadisairaj/card&quot; title=&quot;Sponsor immadisairaj&quot; height=&quot;225&quot; width=&quot;600&quot; style=&quot;border: 0;&quot;&gt;&lt;/iframe&gt;
+
+</description>
+        <pubDate>Tue, 02 Aug 2022 19:50:00 +0530</pubDate>
+        <link>https://immadisairaj.github.io/blog/2022/github-actions-for-flutter-web/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2022/github-actions-for-flutter-web/</guid>
+        
+        <category>Open-Source</category>
+        
+        <category>Flutter</category>
+        
+        <category>GitHub Actions</category>
+        
+        
+        <category>Tech</category>
+        
+      </item>
     
       <item>
         <title>Build an Arrow Pad in Flutter</title>
@@ -1241,46 +1370,6 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
         <guid isPermaLink="true">https://immadisairaj.github.io/blog/2019/kwoc-experience/</guid>
         
         <category>Open-Source</category>
-        
-        
-        <category>Tech</category>
-        
-      </item>
-    
-      <item>
-        <title>Java</title>
-        <description>&lt;p&gt;&lt;strong&gt;What is Java?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Java is an &lt;ins&gt;&lt;em&gt;Object Oriented Programming&lt;/em&gt;&lt;/ins&gt; language that produces software for multiple platforms. It can run on any computer with the help of &lt;ins&gt;Java Virtual Machine&lt;/ins&gt; (JVM). &lt;ins&gt;Java is Platform Independent&lt;/ins&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img style=&quot;width: 100%;&quot; src=&quot;/blog//assets/posts/java/java.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;History of Java?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The java project was initiated by &lt;ins&gt;&lt;em&gt;James Gosling&lt;/em&gt;&lt;/ins&gt;, Mike Sheridan, and Patrick Naughton at &lt;ins&gt;Sun Microsystems&lt;/ins&gt; in June 1991. It was first released in the year 1995. Till now there are many versions released (you can check all the versions &lt;a href=&quot;https://en.wikipedia.org/wiki/Java_version_history&quot;&gt;here&lt;/a&gt;). Now java is under &lt;ins&gt;Oracle&lt;/ins&gt; as it acquired Sun Microsystems in 2010.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What Java really means?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Java is an island of Indonesia. It was the place where the first coffee was made. So, java means Coffee.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What is Java Virtual Machine (JVM)?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Java applications are &lt;ins&gt;&lt;em&gt;Write Once Run Anywhere&lt;/em&gt;&lt;/ins&gt; (WORA). This is possible through JVM. JVM is an engine which provides runtime environment to Java programs and applications. It is a part of Java Runtime Environment (JRE). It has the calibre to compile and run on any Platform this is how Java is &lt;ins&gt;Platform Independent&lt;/ins&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What is Java Development Kit (JDK)?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;JDK is a software development environment which is used for developing Java applications. It includes JRE, java compiler, loader, documentation generator, etc,.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What is Object Oriented Programming (OOP)?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;It is programming based on object methodology. These objects are organised into classes. Object-Oriented Programming makes it easier for programmers to structure and organise software programs. Because individual objects can be modified without affecting other aspects of the program. The class is  the data format for a given object. Object is an instance of a class. Java is one of the language which is Object Oriented.&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 30 Aug 2018 18:00:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2018/java/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2018/java/</guid>
-        
-        <category>Java</category>
         
         
         <category>Tech</category>
