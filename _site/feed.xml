@@ -3,10 +3,10 @@
   <channel>
     <title>Sai Rajendra Immadi</title>
     <description>Open-Source Enthusiast | Musician</description>
-    <link>https://immadisairaj.github.io/blog/</link>
-    <atom:link href="https://immadisairaj.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 02 Aug 2022 19:58:59 +0530</pubDate>
-    <lastBuildDate>Tue, 02 Aug 2022 19:58:59 +0530</lastBuildDate>
+    <link>https://immadisairaj.github.io/jekyll-blog/</link>
+    <atom:link href="https://immadisairaj.github.io/jekyll-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 05 Sep 2022 20:57:57 +0530</pubDate>
+    <lastBuildDate>Mon, 05 Sep 2022 20:57:57 +0530</lastBuildDate>
     <generator>Jekyll v3.9.2</generator>
     
       <item>
@@ -14,7 +14,7 @@
         <description>&lt;p&gt;Do you deploy your Flutter web application in gh-pages? And you are tired of manually deploying the app every time? Or do you want to deploy your Flutter web application to gh-pages? Then this blog is for you. Continue ahead to know how to simplify the process.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
- &lt;img height=&quot;400&quot; src=&quot;/blog//assets/posts/github-actions-for-flutter-web/thumbnail.jpeg&quot; /&gt;
+ &lt;img height=&quot;400&quot; src=&quot;/jekyll-blog//assets/posts/github-actions-for-flutter-web/thumbnail.jpeg&quot; /&gt;
  &lt;br /&gt;
  &lt;em&gt;Thumbnail Design&lt;/em&gt;
 &lt;/p&gt;
@@ -51,7 +51,7 @@
 &lt;p&gt;To start, first click &lt;a href=&quot;https://github.com/settings/tokens/new&quot;&gt;this&lt;/a&gt; link to generate a new GitHub Personal Access Token.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
- &lt;img height=&quot;400&quot; src=&quot;/blog//assets/posts/github-actions-for-flutter-web/pat-setting.png&quot; /&gt;
+ &lt;img height=&quot;400&quot; src=&quot;/jekyll-blog//assets/posts/github-actions-for-flutter-web/pat-setting.png&quot; /&gt;
  &lt;br /&gt;
  &lt;em&gt;options to give while creating a Personal Access Token&lt;/em&gt;
 &lt;/p&gt;
@@ -74,7 +74,7 @@
 &lt;p&gt;*Make sure to replace &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;&lt;/code&gt; with your GitHub username and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;repository&amp;gt;&lt;/code&gt; with the repository.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
- &lt;img height=&quot;300&quot; src=&quot;/blog//assets/posts/github-actions-for-flutter-web/action-secrets.png&quot; /&gt;
+ &lt;img height=&quot;300&quot; src=&quot;/jekyll-blog//assets/posts/github-actions-for-flutter-web/action-secrets.png&quot; /&gt;
  &lt;br /&gt;
  &lt;em&gt;add the Personal Access Token into GitHub Actions secrets&lt;/em&gt;
 &lt;/p&gt;
@@ -124,8 +124,8 @@
 
 </description>
         <pubDate>Tue, 02 Aug 2022 19:50:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2022/github-actions-for-flutter-web/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2022/github-actions-for-flutter-web/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2022/github-actions-for-flutter-web/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2022/github-actions-for-flutter-web/</guid>
         
         <category>Open-Source</category>
         
@@ -147,9 +147,9 @@
 &lt;p&gt;Arrow Pad? What is it? Well, it’s just a pad containing arrow’s and responds to the inputs we give. The first thing which comes to mind is the arrow keys in a computer. Isn’t it? But that is not what inspired me and instead is mp3 players.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img height=&quot;200&quot; src=&quot;/blog//assets/posts/build-arrow-pad/arrow-keys.png&quot; /&gt;
+    &lt;img height=&quot;200&quot; src=&quot;/jekyll-blog//assets/posts/build-arrow-pad/arrow-keys.png&quot; /&gt;
     &amp;nbsp;
-    &lt;img height=&quot;200&quot; src=&quot;/blog//assets/posts/build-arrow-pad/mp3-player.jpeg&quot; /&gt;
+    &lt;img height=&quot;200&quot; src=&quot;/jekyll-blog//assets/posts/build-arrow-pad/mp3-player.jpeg&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Computer Arrow Keys on Keyboard &lt;a href=&quot;https://usefulicons.com/lonely/arrow-keys&quot;&gt;(Image Source)&lt;/a&gt;&lt;/em&gt;
     &amp;nbsp;
@@ -164,7 +164,7 @@
 &lt;p&gt;Linking an image of how I thought it should be (and how it will be).&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img height=&quot;250&quot; src=&quot;/blog//assets/posts/build-arrow-pad/arrow-pad-red-yellow.png&quot; /&gt;
+    &lt;img height=&quot;250&quot; src=&quot;/jekyll-blog//assets/posts/build-arrow-pad/arrow-pad-red-yellow.png&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Final design on how it looks&lt;/em&gt;
 &lt;/p&gt;
@@ -296,7 +296,7 @@
 &lt;p&gt;After putting up all the widgets into their place. Let’s look at how the widget is now.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img height=&quot;250&quot; src=&quot;/blog//assets/posts/build-arrow-pad/arrow-pad-white-yellow.png&quot; /&gt;
+    &lt;img height=&quot;250&quot; src=&quot;/jekyll-blog//assets/posts/build-arrow-pad/arrow-pad-white-yellow.png&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Final build after putting up widgets together&lt;/em&gt;
 &lt;/p&gt;
@@ -308,7 +308,7 @@
 &lt;p&gt;But, instead we have a InkWell property which has &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onTapDown&lt;/code&gt;. It provides us the user tap location. We can use it to achieve our goal to determine where the user has clicked.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img height=&quot;250&quot; src=&quot;/blog//assets/posts/build-arrow-pad/arrow-pad-white-yellow-touch.png&quot; /&gt;
+    &lt;img height=&quot;250&quot; src=&quot;/jekyll-blog//assets/posts/build-arrow-pad/arrow-pad-white-yellow-touch.png&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Widget partitions&lt;/em&gt;
 &lt;/p&gt;
@@ -348,7 +348,7 @@ Down Arrow: Down Middle
 &lt;p&gt;This method completes our widget. which can work even with feedback. Below is how it works&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img height=&quot;250&quot; src=&quot;/blog//assets/posts/build-arrow-pad/video.gif&quot; /&gt;
+    &lt;img height=&quot;250&quot; src=&quot;/jekyll-blog//assets/posts/build-arrow-pad/video.gif&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Working Demo of the widget&lt;/em&gt;
 &lt;/p&gt;
@@ -503,8 +503,8 @@ Down Arrow: Down Middle
 &lt;p&gt;Happy Fluttering!!&lt;/p&gt;
 </description>
         <pubDate>Fri, 17 Dec 2021 10:52:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2021/build-arrow-pad/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2021/build-arrow-pad/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2021/build-arrow-pad/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2021/build-arrow-pad/</guid>
         
         <category>Flutter</category>
         
@@ -522,7 +522,7 @@ Down Arrow: Down Middle
 &lt;p&gt;&lt;strong&gt;Bharatanatyam Dance Program:&lt;/strong&gt; An event which includes Bharatanatyam performance in the name of God, dedicated to God (Archana/Worship to the Lord) is a Bharatanatyam Dance Program.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img src=&quot;/blog//assets/posts/effort-behind-a-dance-program/intro.JPG&quot; /&gt;
+    &lt;img src=&quot;/jekyll-blog//assets/posts/effort-behind-a-dance-program/intro.JPG&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Bharatanatyam&lt;/em&gt;
 &lt;/p&gt;
@@ -548,7 +548,7 @@ Down Arrow: Down Middle
 &lt;p&gt;What songs to choose for the program? Will it be a recorded or a live orchestra? Answering these questions can be done in this phase.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img src=&quot;/blog//assets/posts/effort-behind-a-dance-program/audio.JPG&quot; /&gt;
+    &lt;img src=&quot;/jekyll-blog//assets/posts/effort-behind-a-dance-program/audio.JPG&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Live Orchestra&lt;/em&gt;
 &lt;/p&gt;
@@ -587,7 +587,7 @@ Down Arrow: Down Middle
 &lt;p&gt;This phase contains all the preparation that will be visible On-Stage (On Screen). It mainly focuses on the dancers/presenters.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img src=&quot;/blog//assets/posts/effort-behind-a-dance-program/front-end.JPG&quot; /&gt;
+    &lt;img src=&quot;/jekyll-blog//assets/posts/effort-behind-a-dance-program/front-end.JPG&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Final still from a Program&lt;/em&gt;
 &lt;/p&gt;
@@ -623,7 +623,7 @@ Down Arrow: Down Middle
 &lt;p&gt;Costumes and Make-up are chosen and selected to show the properness of the performer role. Costumes can either be rented or stiched (new). Hiring a Make-up person(s) to make the performers close to their performing roles gives a better look than self make-up. Getting costumes and make-up also include the props needed for the performs.&lt;/p&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img src=&quot;/blog//assets/posts/effort-behind-a-dance-program/make-up.jpeg&quot; /&gt;
+    &lt;img src=&quot;/jekyll-blog//assets/posts/effort-behind-a-dance-program/make-up.jpeg&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Nava Durga&lt;/em&gt;
 &lt;/p&gt;
@@ -651,7 +651,7 @@ Down Arrow: Down Middle
 &lt;h1 id=&quot;performance&quot;&gt;Performance&lt;/h1&gt;
 
 &lt;p align=&quot;center&quot;&gt;
-    &lt;img src=&quot;/blog//assets/posts/effort-behind-a-dance-program/performance.JPG&quot; /&gt;
+    &lt;img src=&quot;/jekyll-blog//assets/posts/effort-behind-a-dance-program/performance.JPG&quot; /&gt;
     &lt;br /&gt;
     &lt;em&gt;Still from a Performance&lt;/em&gt;
 &lt;/p&gt;
@@ -706,8 +706,8 @@ Down Arrow: Down Middle
 
 </description>
         <pubDate>Mon, 08 Nov 2021 13:27:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2021/effort-behind-a-dance-program/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2021/effort-behind-a-dance-program/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2021/effort-behind-a-dance-program/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2021/effort-behind-a-dance-program/</guid>
         
         <category>Bharatanatyam</category>
         
@@ -822,8 +822,8 @@ Happy Caching!!&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 12 Aug 2021 12:32:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2021/flutter-post-caching/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2021/flutter-post-caching/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2021/flutter-post-caching/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2021/flutter-post-caching/</guid>
         
         <category>Open-Source</category>
         
@@ -842,7 +842,7 @@ Happy Caching!!&lt;/p&gt;
 
 &lt;h3 id=&quot;what-would-happen-if-mistakes-didnt-exist&quot;&gt;What would happen if mistakes didn’t exist?&lt;/h3&gt;
 
-&lt;p&gt;&lt;img style=&quot;width: 100%&quot; src=&quot;/blog//assets/posts/mistakes/robots.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;width: 100%&quot; src=&quot;/jekyll-blog//assets/posts/mistakes/robots.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Humans become robots? &lt;a href=&quot;https://www.lucarobotics.com/blog/best-robots-in-the-world&quot;&gt;(Image Source)&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
@@ -923,8 +923,8 @@ Happy Caching!!&lt;/p&gt;
 
 </description>
         <pubDate>Wed, 30 Dec 2020 16:42:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2020/mistakes/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2020/mistakes/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2020/mistakes/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2020/mistakes/</guid>
         
         <category>General</category>
         
@@ -968,8 +968,8 @@ Happy Caching!!&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 23 Oct 2020 12:42:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2020/journey-with-chapel/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2020/journey-with-chapel/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2020/journey-with-chapel/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2020/journey-with-chapel/</guid>
         
         <category>Open-Source</category>
         
@@ -986,7 +986,7 @@ Happy Caching!!&lt;/p&gt;
 
 &lt;p&gt;I didn’t find any direct methods to add google-analytics to my flutter-web application while I was searching. I’ve managed to integrate it successfully by referring to different blogs. So, I am writing this blog to make it easier.&lt;/p&gt;
 
-&lt;p&gt;&lt;img style=&quot;width: 100%&quot; src=&quot;/blog//assets/posts/google-analytics-with-flutter-web/flutter+google-analytics.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img style=&quot;width: 100%&quot; src=&quot;/jekyll-blog//assets/posts/google-analytics-with-flutter-web/flutter+google-analytics.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;steps-to-be-followed&quot;&gt;Steps to be followed&lt;/h2&gt;
 
@@ -1087,8 +1087,8 @@ Happy Caching!!&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 11 Jun 2020 16:26:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2020/google-analytics-with-flutter-web/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2020/google-analytics-with-flutter-web/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2020/google-analytics-with-flutter-web/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2020/google-analytics-with-flutter-web/</guid>
         
         <category>Open-Source</category>
         
@@ -1140,8 +1140,8 @@ Happy Caching!!&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 11 Jun 2020 12:07:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2020/port-the-blog/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2020/port-the-blog/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2020/port-the-blog/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2020/port-the-blog/</guid>
         
         <category>Open-Source</category>
         
@@ -1299,8 +1299,8 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 
 </description>
         <pubDate>Sun, 24 Feb 2019 18:00:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2019/git-with-open-source/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2019/git-with-open-source/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2019/git-with-open-source/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2019/git-with-open-source/</guid>
         
         <category>Open-Source</category>
         
@@ -1345,8 +1345,8 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 
 &lt;h3 id=&quot;evolution-of-the-application&quot;&gt;Evolution of the Application&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/blog//assets/posts/kwoc-experience/before.jpg&quot; /&gt;
-&lt;img src=&quot;/blog//assets/posts/kwoc-experience/after.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/jekyll-blog//assets/posts/kwoc-experience/before.jpg&quot; /&gt;
+&lt;img src=&quot;/jekyll-blog//assets/posts/kwoc-experience/after.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Above pictures Left: Before, Right: After&lt;/em&gt;&lt;/p&gt;
 
@@ -1366,8 +1366,8 @@ There are even many more things you can learn about “&lt;strong&gt;git&lt;/str
 
 </description>
         <pubDate>Tue, 15 Jan 2019 18:00:00 +0530</pubDate>
-        <link>https://immadisairaj.github.io/blog/2019/kwoc-experience/</link>
-        <guid isPermaLink="true">https://immadisairaj.github.io/blog/2019/kwoc-experience/</guid>
+        <link>https://immadisairaj.github.io/jekyll-blog/2019/kwoc-experience/</link>
+        <guid isPermaLink="true">https://immadisairaj.github.io/jekyll-blog/2019/kwoc-experience/</guid>
         
         <category>Open-Source</category>
         

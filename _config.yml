@@ -2,7 +2,7 @@
 title: Sai Rajendra Immadi
 description: 'Open-Source Enthusiast | Musician'
 url: 'https://immadisairaj.github.io'
-baseurl: '/blog'
+baseurl: '/jekyll-blog'
 google_analytics: 'UA-168944360-2'
 disqus_shortname: 'immadisairaj-github-io'
 
